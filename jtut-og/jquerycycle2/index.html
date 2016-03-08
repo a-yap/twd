@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Cycle Plugin</title>
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+</head>
+
+
+<body>
+<div class="wrapper">
+    <header>
+        <h1>jQuery Cycle Plugin</h1>
+    </header>
+    <main>
+        <div class="cycle-slideshow"
+             data-cycle-fx="scrollHorz"
+             data-cycle-timeout="0"
+             data-cycle-prev="#prev"
+             data-cycle-next="#next"
+        >
+            <img src="images/cat1-600.jpg" alt="Cat1"/>
+            <img src="images/cat2-600.jpg" alt="Cat2"/>
+            <img src="images/cat3-600.jpg" alt="Cat3"/>
+            <img src="images/cat4-600.jpg" alt="Cat4"/>
+            <img src="images/cat5-600.jpg" alt="Cat5"/>
+        </div><!-- end cycle-slideshow -->
+
+
+
+        <div class="slide_controls">
+            <div class="btn_prev" id="prev">
+            </div><!-- end btn_prev -->
+            <div class="btn_next" id="next">
+            </div><!-- end btn_next -->
+        </div><!-- end slide_controls -->
+    </main>
+    <footer>
+        <p>For Educational Purposes Only. </p>
+        <p>&copy; 2016 Antoniette Yap</p>
+    </footer>
+</div><!-- end of wrapper -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+</body>
+</html>

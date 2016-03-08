@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Day 02 Review</title>
+    <link rel="stylesheet" type="text/css" href="stylesstyles-day-02-review.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/ico" href="/images/aymountainfavicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <!--<link rel="stylesheet" type="text/css" href="/styles/prism.css">-->
+    <link href='https://fonts.googleapis.com/css?family=Fredericka+the+Great|Open+Sans|Cabin+Sketch|Shadows+Into+Light'
+          rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<header>
+    <!-- Review Notes:
+         - Use Media Queries to switch the background-image to
+           the large, medium and small versions..
+         - 1024px and below -> load the medium version
+         - 600px and below -> load the small version
+    -->
+    <h1>Vancouver</h1>
+</header>
+
+<main>
+    <article class="a-01">
+        <h1>Vancouver's Barate Kid</h1>
+
+        <picture>
+            <source srcset="images/barate-cropped.jpg"  media="(max-width: 480px)">
+            <img src="images/barate.jpg" width="640" height="356"   alt="Vancouver's Barate Kid"/>
+        </picture>
+        <!-- Review Notes:
+             - Wrap this image in a picture element
+             - load the cropped version at 480px and below
+             - cropped file name -> barate-cropped.jpg
+        -->
+
+        <p>If you like fun boozy charity fundraisers, then make a note in your diary for Monday 26th October when BC’s biggest bartender contest reaches its last lap at Republic on Granville Street with the grand finale of the Barate Kid Bartending Tournament. Running since March with seven qualifying events across Vancouver, Kelowna and Victoria, Barate has the largest cash prize of any contest of its kind in Canada and is a serious test of bartenders’ speed, skill and drinksmanship. We spoke with Gez McAlpine of the Keefer Bar, co-organiser of the event to find out more.</p>
+
+    </article>
+    <article class="a-02">
+        <h1>Vancouver's Top Workouts</h1>
+
+        <img sizes="(min-width: 961px) 900px, (max-width: 960px) 94vw"
+
+             srcset="images/fitness-large.jpg 1800w,
+                  images/fitness-medium.jpg 900w,
+                  images/fitness-small.jpg 450w"
+
+             src="images/fitness-large.jpg" width="1800" height="1200" alt="fitness training"/>
+
+        <!-- Review Notes:
+             - Convert this image to a responsive image
+             - Create a sizes attribute
+               -- Sizes Parameters
+                  --- min-width: 961px -> 900px
+                  --- max-width: 960px -> 94vw
+			- Create a srcset attribute
+              -- srcset Parameters
+                 --- images/fitness-large.jpg 1800w
+                 --- images/fitness-medium.jpg 900w
+                 --- images/fitness-small.jpg 450w
+        -->
+
+        <p>There’s nothing like a great workout to get you feeling rejuvenated, strong and ready to take on the world. Fitness fads come and go but these are the hottest ones trending right now in Vancouver. So if you’re looking for a change of pace or a new challenge, grab an Ugi ball, don those kangoo boots, box your heart out or head to the circuit for a 30-minute hit.</p>
+    </article>
+    <article>
+        <h1>Travel Vancouver</h1>
+        <!-- Review Notes:
+             - Use fitvids.js to make this Youtube video responsive
+             - jQuery and fitvids.js have already been included on
+               this web page
+        -->
+        <article>
+            <iframe width="700" height="450" src="https://www.youtube.com/embed/G_Z3lmidmrY" frameborder="0" allowfullscreen></iframe>
+        </article>
+
+        <p>Donec semper vehicula ante, ut tristique turpis rhoncus id. Praesent sem ex, euismod eget turpis quis, porttitor luctus turpis. Vestibulum posuere porta porttitor. Nunc sit amet elit blandit, semper elit sit amet, dignissim est. Cras hendrerit tristique feugiat. Sed nulla purus, semper vel quam et, posuere scelerisque elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    </article>
+</main>
+<footer>
+    <p>&copy; 2015 Michael Whyte</p>
+    <h2>Image and Article Credits</h2>
+    <ul>
+        <li><a href="http://www.kotanyisofrasi.com/apartments-in-vancouver-bc/17/vancouver-skyline/">Banner Image</a></li>
+        <li><a href="http://www.insidevancouver.ca/">Barate Kid - Article and Image</a></li>
+        <li><a href="http://www.insidevancouver.ca/">Vancouver's Top Workouts - Article</a></li>
+        <li><a href="http://www.yourallaround.com/">Vancouver's Top Workouts - Image</a></li>
+        <li><a href="https://www.youtube.com/watch?v=GfyYOXcHkTY">Travel Vancouver - Video</a></li>
+    </ul>
+    <p>For Educational Use Only</p>
+</footer>
+
+
+
+
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="scripts/fitvids.js"></script>
+<!-- <script src="scripts/script-day-02-review.js"></script> -->
+<script>
+
+
+    $('article').fitVids();
+
+</script>
+
+
+</body>
+</html>
